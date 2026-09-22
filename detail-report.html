@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | E-Report</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Cdn AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary py-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
+                <span class="fw-bold text-white">E-Report IDN</span>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="index.html#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html#recent">Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- single content -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-8">
+                <h1 class="fw-bold">Laporan Photo Blur</h1>
+                <p class="text-secondary">By <a href="#" class="fw-semibold text-primary text-decoration-none">Dimas
+                        Rangga</a> | 15 Maret 2026
+                </p>
+
+                <div style="height: 400px; overflow: hidden;">
+                    <img class="img-fluid rounded shadow-sm" src="./assets/images/images.jpg" alt="">
+                </div>
+
+                <p class="mt-4 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quisquam, quod.</p>
+                <blockquote class="border-start border-primary border-3 p-3 fst-italic text-secondary">Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Earum sint itaque laudantium!</blockquote>
+
+                <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio accusamus,
+                    similique officia odit possimus eius qui, sint recusandae sapiente praesentium animi quae
+                    repellendus dolor?</p>
+
+                <hr>
+
+                <h4 class="fw-semibold">Comments</h4>
+                <form class="mt-3" action="">
+                    <div>
+                        <textarea class="form-control" placeholder="Leave a comment..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit Comment <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="col-4">
+                <nav class="mt-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"
+                                class="text-decoration-none text-primary">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html#recent"
+                                class="text-decoration-none text-primary">Recent</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Detail Report</li>
+                    </ol>
+                </nav>
+
+                <div class="card mt-5 shadow-sm">
+                    <div class="card-header fw-bold">
+                        Recent Report
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fa-solid fa-chevron-right text-primary"></i> <span
+                                class="p-2">Lapangan Rusak</span></li>
+                        <li class="list-group-item"><i class="fa-solid fa-chevron-right text-primary"></i> <span
+                                class="p-2">Air Habis</span></li>
+                        <li class="list-group-item"><i class="fa-solid fa-chevron-right text-primary"></i> <span
+                                class="p-2">Asrama Kotor</span></li>
+                    </ul>
+                </div>
+               
+                <div class="card mt-3 shadow-sm">
+                    <div class="card-header fw-bold">
+                        Category
+                    </div>
+                   <div class="card-body">
+                        <span class="badge text-bg-success">Report</span>
+                        <span class="badge text-bg-danger">Facility</span>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" class="bg-primary">
+        <div class="container">
+            <div class="row py-5 row-gap-4 justify-content-between">
+                <div class="col-md-4  text-white">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img width="30" class="d-inline-block align-text-top rounded" src="./assets/images/logo.png"
+                            alt="E-Report Logo">
+                        <h2 class="fw-bold mb-0">E-Report</h2>
+                    </div>
+                    <p class="lh-lg m-0 opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                        ipsum dicta quas consectetur neque itaque?</p>
+                </div>
+                <div class="col-md-2 text-white d-flex flex-column gap-2">
+                    <h4 class="fw-bold mb-2">Menu</h4>
+                    <a href="#about" class="text-decoration-none text-white opacity-75">Home</a>
+                    <a href="#about" class="text-decoration-none text-white opacity-75">About</a>
+                    <a href="#services" class="text-decoration-none text-white opacity-75">Services</a>
+                    <a href="#recent" class="text-decoration-none text-white opacity-75">Recents</a>
+                    <a href="#faq" class="text-decoration-none text-white opacity-75">FAQ</a>
+                </div>
+                <div class="col-md-4 text-white d-flex flex-column gap-4">
+                    <h4 class="fw-bold mb-2">Contact Us</h4>
+                    <a class="gap-2 d-flex align-items-center text-decoration-none text-white opacity-75 fw-bold"
+                        href="mailto:dimasranggasetyawibowo@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        dimasranggasetyawibowo@gmail.com
+                    </a>
+                    <a class="gap-2 d-flex align-items-center text-decoration-none text-white opacity-75 fw-bold"
+                        href="https://api.whatsapp.com/send/?phone=628119450288&text&type=phone_number&app_absent=0">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +62 811-9450-288
+                    </a>
+                    <a class="gap-2 d-flex align-items-center text-decoration-none text-white opacity-75 fw-bold"
+                        href="https://instagram.com/dimasranggasetyawibowo/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        dimm_
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright text-center py-3 border-secondary-subtle">
+                <p class="m-0 text-white">&copy; 2026 E-Report By <span class="fw-bold">Dimas Rangga Setya
+                        Wibowo</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- cdn for animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <!-- Js AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
