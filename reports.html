@@ -61,14 +61,23 @@
 
     <!-- Reports -->
     <section id="reports">
-        <div class="container text-center">
+        <div class="container">
             <!-- Title -->
-            <div>
-                <h1 class="fw-bold text-primary-emphasis py-3">All Reports</h1>
-                <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-                    distinctio placeat rerum
-                    assumenda ut harum, quibusdam mollitia adipisci voluptates molestiae totam nobis perspiciatis fuga
-                    hic.</p>
+            <div
+                class="d-flex flex-column flex-lg-row text-center text-lg-start align-items-center justify-content-between gap-3">
+                <div class="col-lg-8">
+                    <h1 class="fw-bold text-primary-emphasis py-3">All Reports</h1>
+                    <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                        distinctio placeat rerum
+                        assumenda ut harum, quibusdam mollitia adipisci voluptates molestiae totam nobis perspiciatis
+                        fuga
+                        hic.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fa-solid fa-plus"></i>Add report</button>
+                </div>
             </div>
 
             <!-- Filter -->
@@ -123,8 +132,8 @@
                         <div class="category position-absolute px-3 py-2">
                             <a class="text-decoration-none text-white" href="">Facility</a>
                         </div>
-                        <img style="height: 300px; overflow: hidden;" src="./assets/images/air.jpg"
-                            class="card-img-top" alt="...">
+                        <img style="height: 300px; overflow: hidden;" src="./assets/images/air.jpg" class="card-img-top"
+                            alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Air Habis</h5>
                             <small>By: <a class="text-decoration-none" href="">Dimas Rangga</a> an hour ago</small>
@@ -269,6 +278,48 @@
 
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h1 class="modal-title fs-5 text-white fw-semibold" id="exampleModalLabel"><i
+                            class="fa-solid fa-pen-to-square"></i>Add new report</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                    <div class="modal-body p-5">
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold" for="">Report Title:</label>
+                            <input class="form-control shadow-sm" type="text" placeholder="Type the report title...">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold" for="">Select Category:</label>
+                            <select class="form-select">
+                                <option value="">Select Category...</option>
+                                <option value="Academic">Academic</option>
+                                <option value="Facility">Facility</option>
+                                <option value="Anonymous">Anonymous</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold" for="">Select Category:</label>
+                            <textarea rows="6" class="form-control shadow-sm" placeholder="Report Contents..."></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold" for="">Upload an Image:</label>
+                            <input type="file" class="form-control shadow-sm" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="reset" class="btn btn-secondary">Reset report</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i>Upload report</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer data-aos="fade-up" class="bg-primary">
